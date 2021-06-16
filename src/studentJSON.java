@@ -26,6 +26,7 @@ public class studentJSON {
         while(rs.next()) {
             JSONObject record = new JSONObject();
             record.put("name", rs.getString("sname"));
+            record.put("course", rs.getString("course"));
             record.put("marks", rs.getString("grade"));
             record.put("average", rs.getString("average"));
             array.add(record);
